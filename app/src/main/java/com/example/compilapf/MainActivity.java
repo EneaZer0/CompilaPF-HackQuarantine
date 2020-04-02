@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
     private void setNewGoal() {
         View view = getLayoutInflater().inflate(R.layout.fragment_goals, null);
         textSetGoal = view.findViewById(R.id.goalAddedText);
-        fabGoalAdder = view.findViewById(R.id.addFab);
+        fabGoalAdder = findViewById(R.id.addFab);
         fabGoalAdder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
