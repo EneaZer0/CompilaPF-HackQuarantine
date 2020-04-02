@@ -18,7 +18,6 @@ import androidx.appcompat.app.AppCompatDialogFragment;
 public class GoalAdderDialog extends AppCompatDialogFragment {
 
     private EditText editTextGoal;
-    private String goalInput;
     private DialogListener listener;
 
     @NonNull
@@ -47,8 +46,6 @@ public class GoalAdderDialog extends AppCompatDialogFragment {
                     }
                 });
 
-
-
         return builder.create();
     }
 
@@ -66,9 +63,4 @@ public class GoalAdderDialog extends AppCompatDialogFragment {
             throw new ClassCastException(context.toString() + "must implement DialogListener");
         }
     }
-
-    public String getGoalInput() {
-        return goalInput;
-    }
-
 }
