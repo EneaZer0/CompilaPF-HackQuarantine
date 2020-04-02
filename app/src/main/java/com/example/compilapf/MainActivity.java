@@ -17,7 +17,7 @@ import com.google.android.material.tabs.TabLayout;
 
 import java.text.DateFormat;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements GoalAdderDialog.DialogListener {
 
     /** Constants used in the Tabs*/
     private TabLayout tabLayout;
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     /** Constants used in the Goals Adder Fab*/
     private TextView textSetGoal;
     private FloatingActionButton fabGoalAdder;
-    private Button button;
+    private String setGoal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -144,4 +144,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    public void applyTexts(String goal) {
+        textSetGoal.setText(goal);
+    }
 }

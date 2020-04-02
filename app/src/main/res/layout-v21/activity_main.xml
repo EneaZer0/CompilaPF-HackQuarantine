@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@color/tabBackground"
+        app:elevation="0dp"
         >
 
         <RelativeLayout
@@ -54,6 +55,7 @@
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:elevation="-10dp"
         android:background="@color/tabBackground"
         app:layout_anchor="@+id/appBarLayout"
         app:layout_anchorGravity="center"
