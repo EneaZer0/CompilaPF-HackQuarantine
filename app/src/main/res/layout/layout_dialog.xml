@@ -3,13 +3,165 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:padding="16dp"
     >
-    
+    <!-- android:background="@color/tabBackground" -->
+
     <EditText
         android:id="@+id/edit_goalAdded"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/add_goal_text"
+
         />
+
+    <!--
+    android:backgroundTint="@color/tabText"
+    android:textColorHint="@color/tabText"
+    android:textColor="@color/tabText"
+    -->
+
+    <TextView
+        android:id="@+id/priority_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/priority_text"
+        android:layout_marginTop="65dp"
+
+        >
+        
+    </TextView>
+
+    <!--
+     android:textColor="@color/tabText"
+     -->
+
+
+    <ImageButton
+        android:id="@+id/lowFlag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_flag"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="130dp"
+        android:tint="@color/tabText"
+        >
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/mediumFlag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_flag"
+        android:layout_marginTop="55dp"
+        android:tint="#FFF200"
+        android:layout_marginLeft="200dp"
+        >
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/highFlag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_flag"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="270dp"
+        android:tint="#E3242B"
+        >
+
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/enthusiasm_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enthusiasm"
+        android:layout_marginTop="130dp"
+        >
+
+    </TextView>
+
+    <ImageButton
+        android:id="@+id/deathFace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_death"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="110dp"
+        >
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/sadFace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_sad"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="150dp"
+        >
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/neutralFace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_neutral"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="190dp"
+        >
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/happyFace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_happy"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="230dp"
+        >
+
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/hilariousFace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_hilarious"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="270dp"
+        >
+
+    </ImageButton>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/date_text"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="195dp"
+            android:text="@string/select_date"
+            android:textSize="12dp"
+            >
+
+        </Button>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:layout_marginTop="260dp"
+        >
+
+    </TextView>
 
 
 

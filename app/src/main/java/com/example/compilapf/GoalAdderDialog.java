@@ -30,7 +30,8 @@ public class GoalAdderDialog extends AppCompatDialogFragment {
 
         editTextGoal = view.findViewById(R.id.edit_goalAdded);
 
-        builder.setView(view)
+        builder
+                .setView(view)
                 .setTitle("Add new Goal")
                 .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     @Override

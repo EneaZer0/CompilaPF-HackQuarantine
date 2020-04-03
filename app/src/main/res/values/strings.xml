@@ -11,5 +11,7 @@
     <string name="set_a_goal_base_text">Set a GOAL</string>
     <string name="home">Home</string>
     <string name="profile">PROFILE</string>
+    <string name="priority_text">Select the priority</string>
+    <string name="select_date">Select Date</string>
 
 </resources>
