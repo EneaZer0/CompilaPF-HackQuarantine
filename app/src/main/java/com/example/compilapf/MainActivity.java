@@ -1,24 +1,21 @@
 package com.example.compilapf;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 
 import java.text.DateFormat;
 
-public class MainActivity extends AppCompatActivity implements GoalAdderDialog.DialogListener {
+public class MainActivity extends AppCompatActivity implements GoalAdderDialog.DialogListener, MenuDialog.DialogListener{
 
     /** Constants used in the Tabs*/
     private TabLayout tabLayout;
@@ -123,15 +120,12 @@ public class MainActivity extends AppCompatActivity implements GoalAdderDialog.D
         fabGoalAdder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openDialog();
+                openDialogAddGoal();
             }
         });
     }
 
-    public void openDialog(){
-        GoalAdderDialog goalAdderDialog = new GoalAdderDialog();
-        goalAdderDialog.show(getSupportFragmentManager(), "Goal Adder Dialog");
-    }
+
 
     public void openMenu() {
 
@@ -139,11 +133,22 @@ public class MainActivity extends AppCompatActivity implements GoalAdderDialog.D
         menuButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openDialog();
+                openDialogMenu();
             }
         });
 
     }
+
+    public void openDialogAddGoal(){
+        GoalAdderDialog goalAdderDialog = new GoalAdderDialog();
+        goalAdderDialog.show(getSupportFragmentManager(), "Goal Adder Dialog");
+    }
+
+    public void openDialogMenu(){
+        MenuDialog menuDialog = new MenuDialog();
+        menuDialog.show(getSupportFragmentManager(), "Menu Dialog");
+    }
+
 
     @Override
     public void applyTexts(String goal) {
