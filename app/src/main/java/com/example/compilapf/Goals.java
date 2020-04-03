@@ -20,6 +20,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
  */
 public class Goals extends Fragment {
 
+    private TextView textGoal;
+
     public Goals() {
         // Required empty public constructor
     }
@@ -30,5 +32,20 @@ public class Goals extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_goals, container, false);
         return view;
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+
+
+    }
+
+    public void setTextGoal (String text) {
+        View view = getLayoutInflater().inflate(R.layout.fragment_goals, null);
+        textGoal = view.findViewById(R.id.goalAddedText);
+        textGoal.setText(text);
+
     }
 }
