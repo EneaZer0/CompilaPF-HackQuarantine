@@ -87,18 +87,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_death"
         android:layout_marginTop="120dp"
-        android:layout_marginLeft="110dp"
-        >
-
-    </ImageButton>
-
-    <ImageButton
-        android:id="@+id/sadFace"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_sad"
-        android:layout_marginTop="120dp"
-        android:layout_marginLeft="150dp"
+        android:layout_marginLeft="130dp"
         >
 
     </ImageButton>
@@ -109,18 +98,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_neutral"
         android:layout_marginTop="120dp"
-        android:layout_marginLeft="190dp"
-        >
-
-    </ImageButton>
-
-    <ImageButton
-        android:id="@+id/happyFace"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_happy"
-        android:layout_marginTop="120dp"
-        android:layout_marginLeft="230dp"
+        android:layout_marginLeft="200dp"
         >
 
     </ImageButton>
@@ -135,6 +113,7 @@
         >
 
     </ImageButton>
+    
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
